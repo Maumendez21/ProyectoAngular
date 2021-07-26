@@ -1,0 +1,29 @@
+<div class="contenedor">
+  <div class="l-form">
+    <form class="formL">
+
+      <h1 class="form__title">Registrate</h1>
+
+      <div class="form__div">
+        <input type="text" class="form__input" placeholder="">
+        <label class="form__label">Username</label>
+      </div>
+      <div class="form__div">
+        <input type="text" class="form__input" placeholder="">
+        <label class="form__label">Email</label>
+      </div>
+
+      <div class="form__div">
+        <input type="password" class="form__input" placeholder="">
+        <label class="form__label">Contraseña</label>
+      </div>
+      <div class="form__div">
+        <input type="password" class="form__input" placeholder="">
+        <label class="form__label">Repite la contraseña</label>
+      </div>
+      <!-- (click)="login()"  -->
+      <button (click)="register()" class="form__button">Registrar</button>
+      <a class="margin" [routerLink]="'/login'">¿Ya tienes cuenta? Inicia Sesión</a>
+    </form>
+  </div>
+</div>

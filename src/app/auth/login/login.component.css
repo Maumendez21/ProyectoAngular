@@ -1,0 +1,133 @@
+/*========== GOOGLE FONTS ==========*/
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+:root{
+  /* // colores */
+  --first-color: #1A73E8;
+  --nput-color: #80868b;
+  --border-color: #DADCE0;
+
+  /* FUENTE  */
+  --bpdy-font: 'Roboto', sans-serif;
+  --normal-font-size: 1rem;
+  --samll-font-size: .75rem;
+}
+
+/* base  */
+
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+.contenedor {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;;
+  font-size: 1rem;
+  /* background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F300544975134747757%2F&psig=AOvVaw03FT9r2Cq2s8HgB7lzICRZ&ust=1627329311580000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCIC8v6GA__ECFQAAAAAdAAAAABAk"); */
+}
+
+h1{
+  margin: 0;
+}
+
+
+/* form */
+
+.l-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.formL{
+  width: 360px;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(92,99,105, .2);
+}
+
+.form__title{
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.form__div{
+  position: relative;
+  height: 48px;
+  margin-bottom: 1.5rem;
+}
+
+.form__input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  border: 1px solid #DADCE0;
+  border-radius: .5rem;
+  outline: none;
+  padding: 1rem;
+  background: none;
+  z-index: 1;
+  transition: .3s;
+}
+
+.form__label {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  padding: 0 .25rem;
+  background-color: #fff;
+  color: #80868b;
+  font-size: 1rem;
+  transition: .3s;
+}
+
+.form__button{
+  display: block;
+  /* margin-left: auto; */
+  padding: .75rem 2rem;
+  outline: none;
+  border: none;
+  width: 100%;
+  background-color: #1A73E8;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.form__button:hover {
+  box-shadow: 0 10px 36px rgba(0, 0, 0,.20);
+}
+
+
+/* mover el label */
+.form__input:focus + .form__label{
+  top: -.5rem;
+  left: .8rem;
+  color: #1A73E8;
+  font-size: .75rem;
+  font-weight: 500;
+  z-index: 10;
+}
+
+
+/* poner el foco en el input */
+.form__input:not(:placeholder-shown).form__input:not(:focus)+ .form__label{
+  top: -.5rem;
+  left: .8rem;
+  font-size: .75rem;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.form__input:focus{
+  border: 1.5px solid #1A73E8;
+}
+
